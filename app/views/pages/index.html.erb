@@ -1,3 +1,7 @@
 <h1>Portal</h1>
 
 <%= link_to "Documentation", auth_encode_token_path %>
+
+<% @spaces.each do |space| %>
+    <%= link_to space, "https://gitbook-demo-2.gitbook.io/#{space}"%> 
+<% end %>
