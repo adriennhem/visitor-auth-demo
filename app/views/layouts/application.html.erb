@@ -11,8 +11,10 @@
 
   <body>
     <% unless notice.nil? %>
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
+      <div class="alert alert-warning" role="alert">
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+      </div>
     <% end %>
     
     <%= yield %>
