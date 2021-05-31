@@ -1,7 +1,19 @@
-<h1>Portal</h1>
+<div class="container">
+  <h1 class="mt-5">MyDocs</h1>
+  <p class="mb-5">Demo for the visitor authentication feature</p>
+  <div class="row">
+    <% @spaces.each do |space| %>
+        <div class="col-sm-6 col-lg-4 mb-3">
+        <div class="card" style="<%= space == 'project-1' ? 'background-color: #CECECE' : 'background-color: #EBEBEB' %>">
+            <div class="card-body">
+                <h5 class="card-title">
+                    <%= space.truncate(35) %>
+                </h5>
+                <%= link_to (space == "project-1" ? "Click Me" : "Don't Click"), auth_encode_token_path(space: space), target: "_blank", class: "btn btn-primary"%> 
+            </div>
+        </div>
+        </div>
+    <% end %>
 
-<%= link_to "Documentation", auth_encode_token_path %>
-
-<% @spaces.each do |space| %>
-    <%= link_to space, "https://gitbook-demo-2.gitbook.io/#{space}"%> 
-<% end %>
+    </div>
+</div>
