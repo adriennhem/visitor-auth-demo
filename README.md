@@ -30,5 +30,5 @@ def encode_token
         else
             redirect_to root_path, notice: "You are not authorized to access this content!"
         end
-    end
+end
 ```
