@@ -2,6 +2,8 @@
 
 This is a demo of the GitBook's Visitor Authentication feature. This is a public repository. Bear in mind that the code is not perfect and that the purpose of this repository is to showcase the workflow for the feature. 
 
+You can see a live demo [here](https://gitbook-va.herokuapp.com/)
+
 ## How to use it? 
 
 1. Create a new account with a random email and credentials. 
